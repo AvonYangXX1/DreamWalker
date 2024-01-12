@@ -1,7 +1,4 @@
-
 .DS_Store
-data/.DS_Store
-data/.DS_Store
 data/source_data/SILVA_138.1_SSURef_NR99_tax_silva.fasta
 data/source_data/uniref_length_6_TO_40_AND_identity_0_2024_01_10.fasta
 data/source_data/manual_collection.fasta
