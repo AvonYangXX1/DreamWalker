@@ -14,3 +14,5 @@ DreamWalker was trained and tested using Python 3.8 on a ____ system with CPU/GP
 This is the initial version of the code. 
 It contains MICPredictor, PeptideGenerator, and DreamWalker. 
 The results are plotted in visualization file. 
+
+Link to the previous version of the project: https://github.com/AvonYangXX1/AMPLify-Feedback
