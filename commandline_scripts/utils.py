@@ -1,5 +1,8 @@
 import tensorflow as tf
 import numpy as np
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer
+
 class ModelLoader():
     def __init__(self):
         self.lineage_vocab_size = 3982
@@ -7,7 +10,7 @@ class ModelLoader():
         self.amp_length=40
         return
     
-    def create_classifier(self, path="~/DreamWalker/model_weights"):
+    def create_classifier(self, path="DreamWalker/model_weights"):
         encoder_inputs = tf.keras.layers.Input(shape=(1024,))
         x = tf.keras.layers.RepeatVector(self.lineage_length, name="RepeatVector")(encoder_inputs)
         x = tf.keras.layers.GRU(1024, return_sequences=True, dropout=0.2, name="GRU0")(x)
@@ -46,7 +49,7 @@ class ModelLoader():
         generator = tf.keras.models.Model(inputs, x, name="DreamWalker")
         return generator
     
-    def create_oracle(self, path="~/DreamWalker/model_weights/OracleWeights"):
+    def create_oracle(self, path="DreamWalker/model_weights/OracleWeights"):
         inputs0 = tf.keras.layers.Input((self.amp_length, 43),name="SeqInput")
         inputs1 = tf.keras.layers.Input((1024,),name="BacteriaInput")
         # Extract Peptide Features
