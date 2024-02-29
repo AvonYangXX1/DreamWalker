@@ -79,7 +79,6 @@ class ModelLoader():
         oracle.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4),
                     loss=tf.keras.losses.MeanAbsoluteError(),
                     metrics=[tf.keras.metrics.R2Score()])
-        oracle = self.create_oracle()
         for i, layer in enumerate(oracle.layers):
             if i == 3:
                 continue
