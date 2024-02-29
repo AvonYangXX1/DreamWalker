@@ -74,7 +74,7 @@ class ModelLoader():
         x = tf.keras.layers.LayerNormalization(name="LayerNorm_0")(x)
         x = tf.keras.layers.Dense(512, activation="relu", name="FCN_Dense1")(x)
         x = tf.keras.layers.LayerNormalization(name="LayerNorm_1")(x)
-        x = tf.keras.layers.Dense(1, activation=tf.keras.activations.softplus, name="Output")(x)
+        x = tf.keras.layers.Dense(1, activation=tf.keras.activations.sigmoid, name="Output")(x)
         oracle = tf.keras.models.Model([inputs0, inputs1], x, name="Oracle")
         oracle.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-4),
                     loss=tf.keras.losses.MeanAbsoluteError(),
