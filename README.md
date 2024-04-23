@@ -10,4 +10,4 @@ This is the initial version of the code. It contains MICPredictor, PeptideGenera
 Link to the previous version of the project: https://github.com/AvonYangXX1/AMPLify-Feedback
 
 # Citation
-Miao, J., Yang, S., & Collin, A. (2024). De novo Design of Antimicrobial Peptides by Hallucination-Guided Generative Adversarial Networks [Poster presentation]. 2024 MIT-MGB AI Cures Conference, Boston, MA. https://www.mitmgb.ai/posters
+Miao, J., Yang, S., & Collin, A. (2024). _De novo Design of Antimicrobial Peptides by Hallucination-Guided Generative Adversarial Networks_ [Poster presentation]. 2024 MIT-MGB AI Cures Conference, Boston, MA. https://www.mitmgb.ai/posters
